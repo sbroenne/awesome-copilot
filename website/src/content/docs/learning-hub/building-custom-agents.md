@@ -108,6 +108,8 @@ tools: ['codebase', 'terminal', 'github']
 
 For MCP server tools, reference them by server name (e.g., `postgres`, `docker`). See [Understanding MCP Servers](../understanding-mcp-servers/) for details.
 
+**Agent-scoped hooks**: Custom agents can declare hooks that apply only while that agent runs, instead of relying solely on repository-wide hook files. Use them for checks that belong to one agent's workflow. See [Automating with Hooks](../automating-with-hooks/) for hook events and configuration, and the [Copilot CLI changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) for the current agent frontmatter syntax.
+
 ### Agent Instructions
 
 After the frontmatter, write Markdown instructions that define the agent's behavior. Structure these clearly:
