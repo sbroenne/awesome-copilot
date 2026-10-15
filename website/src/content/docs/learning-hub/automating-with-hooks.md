@@ -144,6 +144,10 @@ EOF
 
 When multiple IDE extensions (or a mix of extensions and a `hooks.json` file) each define hooks, all hook definitions are **merged** rather than the last one overwriting the others. This means you can layer hooks from different sources—a project's `.github/hooks/` file, an extension you have installed, and a personal settings file—and all of them will fire for the relevant events.
 
+### Agent-Scoped Hooks
+
+Custom agents can declare hooks directly in their own definition. These hooks apply only while that agent is running, so you can attach guardrails (such as a `preToolUse` check) to a specific agent without affecting every session. Check the [GitHub Copilot CLI changelog](https://github.com/github/copilot-cli/blob/main/changelog.md) for the current field syntax.
+
 ### Cross-Platform Event Name Compatibility
 
 Hook event names can be written in **camelCase** (e.g., `preToolUse`) or **PascalCase** (e.g., `PreToolUse`). Both are accepted, making hook configuration files compatible across GitHub Copilot CLI, VS Code, and Claude Code without modification. Hooks also support Claude Code's nested `matcher`/`hooks` structure alongside the standard flat format.

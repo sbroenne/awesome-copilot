@@ -677,11 +677,11 @@ Use `/diagnose` when a session is behaving unexpectedly — it inspects session 
 
 **Shell command history in normal mode**: The **↑/↓** arrow keys and **Ctrl+R** reverse search include past shell commands (commands run with `!`) while you are in normal (non-shell) input mode, so you can recall and re-run a shell command without switching into shell mode first — useful for quickly repeating a build, test, or diagnostic command from earlier in the session.
 
-**Inline image rendering**: The CLI can display images inline in the terminal when your terminal supports it. If an MCP tool, agent, or attachment returns an image, it is rendered directly in the conversation timeline rather than shown as a file path or URL. This works in terminals with image protocol support (such as iTerm2, Kitty, Wezterm, and tmux with appropriate configuration).
+**Inline image rendering**: The CLI can display images inline in the terminal when your terminal supports it. If an MCP tool, agent, or attachment returns an image, it is rendered directly in the conversation timeline rather than shown as a file path or URL. This works in terminals with image protocol support (such as iTerm2, Kitty, Wezterm, and tmux with appropriate configuration). Inline images are on by default; turn them off with `/settings inlineImages false`.
 
 **Voice dictation**: Press **Ctrl+Space** to toggle voice dictation on or off, letting you speak a prompt instead of typing it.
 
-The `/ask` command lets you ask a quick question without affecting your conversation history. The current session context is preserved, so you can use it for one-off lookups without derailing an ongoing task. Responses are rendered as full markdown, including tables and formatted links:
+The `/ask` command lets you ask a quick question without affecting your conversation history. The current session context is preserved, so you can use it for one-off lookups without derailing an ongoing task. Responses are rendered as full markdown, including tables and formatted links. Press **Ctrl+E** to expand a long answer and **Ctrl+Y** to copy the whole answer. Running `/ask` (or `/btw`) with no question reopens the last completed answer:
 
 ```
 /ask What does the `retry` utility in src/utils do?
