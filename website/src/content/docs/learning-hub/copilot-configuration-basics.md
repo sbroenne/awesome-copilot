@@ -829,6 +829,8 @@ copilot --no-sandbox -p "Set up development environment with system tools"
 
 These flags apply only to the current invocation — your persisted sandbox preference remains unchanged.
 
+In prompt mode (`-p` or piped stdin), pass `--trust-folder` to trust the current folder for that one run without a trust prompt, which is useful in scripts and CI. To opt out of client telemetry uploads, start the CLI with `--disable-client-telemetry`.
+
 **`allowDevToolAccess` sandbox setting**: When the sandbox is enabled, this setting grants sandboxed builds access to toolchain caches, registries, config files, and installs (npm cache, pip cache, Go module cache, etc.) so builds work without extra setup. Set it to `false` in `/settings` to opt out if you want a stricter sandbox that blocks all toolchain access. See [Compatibility and Migration Notes](#compatibility-and-migration-notes) if you have an older `allowDevToolCaches` value configured.
 
 **Sandbox auth settings**: The `/sandbox` configuration dialog groups git, `gh`, and (on macOS) keychain settings under an **Auth** tab, backed by the `sandbox.auth.git` and `sandbox.auth.gh` settings keys. See [Compatibility and Migration Notes](#compatibility-and-migration-notes) if you have the older `sandbox.gitAuth`/`sandbox.ghAuth` keys configured.
