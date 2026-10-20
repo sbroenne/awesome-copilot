@@ -835,7 +835,16 @@ These flags apply only to the current invocation — your persisted sandbox pref
 
 **`worktreeBaseRef` setting**: Controls whether `/worktree`, `/worktree new`, and the `--worktree` startup flag create the new worktree from `HEAD` or from the remote default branch. All three default to `HEAD`. Set this in `/settings` if you want worktrees to branch from the remote default instead.
 
-**Sandbox network isolation**: On macOS and Linux, sandboxed commands cannot reach services running on your own machine, including a server the sandboxed command itself starts on `127.0.0.1`. This means test suites that bind a local port will fail inside the sandbox. Turn on **Allow local network** in `/sandbox` to restore access to localhost. On Linux, sandboxing also requires `slirp4netns`, `nsenter`, `iptables`, `ip6tables`, `iptables-restore`, and `ip6tables-restore` on `PATH` — install these if sandboxed commands start failing to launch. Additionally, Linux sandboxes restrict network egress to the configured HTTP(S) proxy when one is set; this proxy mode requires `slirp4netns`, `util-linux` 2.35+, `iptables`, and `/dev/net/tun` access.
+**Sandbox network isolation**: Sandboxed commands can reach localhost and private-network services by default, so test suites that bind a local port work inside the sandbox. Use the **Allow local network** option in `/sandbox` to turn this off if you want stricter isolation. Use `/sandbox` to keep sandboxing enabled for the current session only, without enabling it globally. On Linux, sandboxing requires `slirp4netns`, `nsenter`, `iptables`, `ip6tables`, `iptables-restore`, and `ip6tables-restore` on `PATH` — install these if sandboxed commands start failing to launch. Linux sandboxes also restrict network egress to the configured HTTP(S) proxy when one is set; this proxy mode requires `slirp4netns`, `util-linux` 2.35+, `iptables`, and `/dev/net/tun` access. Host-rule traffic honors `HTTPS_PROXY` and `HTTP_PROXY` when no sandbox proxy is configured, and sandboxed git on github.com can use a `GITHUB_TOKEN` configured under `credentials.envVars`.
+
+**Trust and telemetry flags**: Use `--trust-folder` to trust the current folder for one-off prompt-mode sessions started with `-p` or piped stdin, and `--disable-client-telemetry` to turn off client telemetry uploads from the CLI:
+
+```bash
+copilot --trust-folder -p "Summarize the open TODOs in this repo"
+copilot --disable-client-telemetry
+```
+
+**Assisted permissions guidance**: In Assisted permission mode, an AI judge decides when a tool request needs your confirmation. Set `assistedApprovalInstructions` in `/settings` to give the judge extra guidance about what your team considers safe or risky.
 
 The `--attachment` flag (available in prompt mode, `-p`) lets you attach files — images or native documents — to the initial prompt in non-interactive mode:
 
@@ -928,6 +937,10 @@ Run `/config` to open a dedicated sidebar configuration screen inside the CLI, g
 
 `/sandbox` supports per-host network allow/deny rules that layer on top of your configured upstream proxy, instead of replacing it. This lets you permit or block specific hosts for sandboxed commands without reconfiguring your whole proxy setup — useful when a sandboxed build or test needs to reach one extra domain (like a package registry mirror) while keeping the rest of your network policy intact.
 
+### Installing from GitHub Install Links
+
+Verified skills and plugins can be installed from GitHub install links with `copilot plugin install "ghapp://air/install?..."`. Trusted repository plugins install and update automatically before chat runs, and `/share` without arguments opens a full-screen menu of sharing actions for the current session.
+
 ### Memory and Session Import
 
 Session and memory import commands accept the semantic JSONL interchange format, making it possible to bring saved session history or memory entries into Copilot CLI from an external export rather than starting from scratch.
@@ -945,7 +958,8 @@ This section collects settings and behaviors that **changed or were renamed** in
 - **`allowDevToolCaches` was renamed to `allowDevToolAccess`.** If your settings file still sets `allowDevToolCaches`, it is silently ignored — update it to `allowDevToolAccess`.
 - **Sandbox auth settings moved from `sandbox.gitAuth`/`sandbox.ghAuth` to `sandbox.auth.git`/`sandbox.auth.gh`.** There is no automatic migration; the old keys are silently ignored, and SDK requests that still send them are rejected as invalid.
 - **`worktreeBaseRef` now defaults to `HEAD` for all worktree-creation paths.** The `--worktree` startup flag previously defaulted to branching from the remote default branch instead.
-- **Sandbox network isolation on macOS/Linux blocks localhost by default.** Sandboxed commands — including a server the sandboxed command itself starts on `127.0.0.1` — can no longer reach services on your own machine. Turn on **Allow local network** in `/sandbox` if your test suite binds a local port. Linux sandboxing also requires `slirp4netns`, `nsenter`, `iptables`, `ip6tables`, `iptables-restore`, and `ip6tables-restore` on `PATH`.
+- **Sandbox local network access is now allowed by default.** Earlier releases blocked localhost for sandboxed commands on macOS/Linux and required enabling **Allow local network** in `/sandbox`. Current releases allow it by default; if you relied on the block, turn the option off explicitly.
+- **The built-in `browser` plugin was renamed `browser-use`.** Existing browser plugin preferences keep working after upgrade.
 - **`copilot plugins` lost its cross-kind flags.** The `--kind`, `--scope`, `--mcp`, and `--skill` flags were removed; `copilot plugins list` is now an alias of `copilot plugin list` and reports only plugins. Scripts using `copilot plugins install --skill [--scope project]` should switch to `copilot skill add [--project]`, and scripts reading `.plugins` from `copilot plugins list --json` should expect a flat array instead of the previous `{ plugins, errors }` object.
 - **Auto allow-all mode requires experimental mode.** The previous `AUTO_APPROVAL` environment variable approach was removed in favor of `/experimental on` (or `--experimental`) plus `/allow-all auto`.
 - **Ctrl+D no longer queues messages.** It now uses its default terminal behavior; use **Ctrl+Q** or **Ctrl+Enter** to queue a message instead.
