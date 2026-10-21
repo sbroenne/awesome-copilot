@@ -112,6 +112,8 @@ applyTo:
   - '**/*.tsx'
 ```
 
+In Copilot CLI, path-specific instruction files in the repository's `.github/instructions` folder are applied automatically when the agent reads or edits a file matching `applyTo`.
+
 ### Common Scoping Patterns
 
 **All TypeScript files**:
