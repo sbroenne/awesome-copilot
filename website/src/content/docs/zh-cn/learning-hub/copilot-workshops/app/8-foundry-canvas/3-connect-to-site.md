@@ -3,7 +3,7 @@ title: "将代理连接到网站"
 description: "通过保护凭据的本地代理服务集成托管的 Backer Concierge，并对聊天组件进行端到端测试。"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-29
 prev:
   link: /zh-cn/learning-hub/copilot-workshops/app/8-foundry-canvas/2-build-and-deploy/
   label: 构建并部署代理
@@ -85,6 +85,6 @@ Tailspin Toys 完全采用预渲染。浏览器代码绝不能直接调用托管
 
 [previous-module]: /zh-cn/learning-hub/copilot-workshops/app/8-foundry-canvas/2-build-and-deploy/
 [project-module]: /zh-cn/learning-hub/copilot-workshops/app/8-foundry-canvas/1-project-and-model/
-[agent-checks]: /zh-cn/learning-hub/copilot-workshops/app/8-foundry-canvas/2-build-and-deploy/#%E5%9C%A8%E6%9C%AC%E5%9C%B0%E6%A3%80%E6%9F%A5%E4%BB%A3%E7%90%86
-[cleanup]: /zh-cn/learning-hub/copilot-workshops/app/8-foundry-canvas/#%E6%B8%85%E7%90%86%E8%B5%84%E6%BA%90
+[agent-checks]: /zh-cn/learning-hub/copilot-workshops/app/8-foundry-canvas/2-build-and-deploy/#在本地检查代理
+[cleanup]: /zh-cn/learning-hub/copilot-workshops/app/8-foundry-canvas/#清理资源
 [core-review]: /zh-cn/learning-hub/copilot-workshops/app/10-review/

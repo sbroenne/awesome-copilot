@@ -2,7 +2,7 @@
 title: "Workshops do GitHub Copilot"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-29
 tags:
   - workshop
 ---
@@ -41,4 +41,4 @@ Escolha entre o GitHub Copilot CLI, o aplicativo GitHub Copilot, o agente de nuv
 [first-steps-app]: /pt-br/learning-hub/copilot-workshops/first-steps/copilot-app/
 [first-steps-cli]: /pt-br/learning-hub/copilot-workshops/first-steps/copilot-cli/
 [first-steps-vscode]: /pt-br/learning-hub/copilot-workshops/first-steps/vscode/
-[real-world-development]: /pt-br/learning-hub/copilot-workshops/real-world-development/
+[real-world-development]: https://github.com/github-samples/copilot-workshops/tree/main/docs/real-world-development

@@ -1,9 +1,9 @@
 ---
-title: "First Steps with GitHub Copilot in Visual Studio Code"
+title: "Visual Studio Code first steps"
 description: "Take a guided tour of GitHub Copilot in Visual Studio Code by building, testing, and shipping a Space Quiz."
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-08
+lastUpdated: 2026-10-29
 tags:
   - workshop
 ---

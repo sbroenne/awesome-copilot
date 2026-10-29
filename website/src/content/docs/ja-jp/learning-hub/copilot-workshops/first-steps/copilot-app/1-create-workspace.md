@@ -3,7 +3,7 @@ title: "レッスン 1 - Space Quiz のワークスペースの作成"
 description: "空のフォルダーで、Space Quiz 用のローカルの Interactive セッションを開始します。"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-29
 ---
 
 Space Quiz 用のローカルワークスペースを作成し、エージェントが作業を始めた後も自分で進行を管理できるセッションを設定します。
@@ -30,5 +30,5 @@ Space Quiz 用のローカルワークスペースを作成し、エージェン
 
 空の Space Quiz ワークスペースの準備ができました。[レッスン 2: クイズの構築と仕上げ][next-lesson]に進みます。
 
-[model-order]: /ja-jp/learning-hub/copilot-workshops/first-steps/copilot-app/0-prerequisites/#%E3%83%A2%E3%83%87%E3%83%AB%E3%82%92%E9%81%B8%E3%81%B6
+[model-order]: /ja-jp/learning-hub/copilot-workshops/first-steps/copilot-app/0-prerequisites/#モデルを選ぶ
 [next-lesson]: /ja-jp/learning-hub/copilot-workshops/first-steps/copilot-app/2-build-and-polish/

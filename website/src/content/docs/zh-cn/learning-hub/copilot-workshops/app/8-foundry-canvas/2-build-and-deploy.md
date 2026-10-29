@@ -3,7 +3,7 @@ title: "构建并部署代理"
 description: "在 Canvas 中生成 Backer Concierge 的初始框架，在本地检查，然后在 Foundry 中部署并重新测试。"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-29
 prev:
   link: /zh-cn/learning-hub/copilot-workshops/app/8-foundry-canvas/1-project-and-model/
   label: 准备项目和模型
@@ -157,4 +157,4 @@ Canvas 使用 `azd` 部署经过测试的代理。Foundry 会打包服务源代�
 
 [previous-module]: /zh-cn/learning-hub/copilot-workshops/app/8-foundry-canvas/1-project-and-model/
 [next-module]: /zh-cn/learning-hub/copilot-workshops/app/8-foundry-canvas/3-connect-to-site/
-[cleanup]: /zh-cn/learning-hub/copilot-workshops/app/8-foundry-canvas/#%E6%B8%85%E7%90%86%E8%B5%84%E6%BA%90
+[cleanup]: /zh-cn/learning-hub/copilot-workshops/app/8-foundry-canvas/#清理资源

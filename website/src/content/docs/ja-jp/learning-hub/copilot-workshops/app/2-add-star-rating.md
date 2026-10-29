@@ -3,7 +3,7 @@ title: "レッスン 2 - 星評価の追加で小さな成果を得る"
 description: "GitHub Copilot app で最初のエージェントセッションを開始し、ゲームカードに小さな変更を加えて、最初の pull request としてマージします。"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-29
 ---
 
 前のレッスンでは、ワークスペースを確認し、クイックチャットを使いました。ここでは、**エージェントセッション**を開始し、プロジェクトに最初の変更を加えます。変更は小規模なものにします。ゲームのデータにはすでに星評価が含まれていますが、ホームページのゲームカードにはまだ表示されていません。エージェントに表示を依頼し、変更をレビューして、最初の pull request としてマージします。
@@ -120,7 +120,7 @@ AI が生成したすべての変更は、どれほど小さくてもマージ�
 - [GitHub Copilot app について][about-copilot-app]
 - [GitHub Copilot app での Issue と pull request の管理][managing-issues-prs]
 
-[prior-lesson]: /ja-jp/learning-hub/copilot-workshops/app/1-install-copilot-app/#github-copilot-app-%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E6%A7%8B%E6%88%90%E3%81%99%E3%82%8B
+[prior-lesson]: /ja-jp/learning-hub/copilot-workshops/app/1-install-copilot-app/#github-copilot-app-をインストールして構成する
 [next-lesson]: /ja-jp/learning-hub/copilot-workshops/app/3-agent-modes/
 [agent-sessions]: https://docs.github.com/copilot/how-tos/github-copilot-app/agent-sessions
 [about-copilot-app]: https://docs.github.com/copilot/concepts/agents/github-copilot-app

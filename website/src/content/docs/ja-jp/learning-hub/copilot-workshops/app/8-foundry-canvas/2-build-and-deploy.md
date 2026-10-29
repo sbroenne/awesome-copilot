@@ -3,7 +3,7 @@ title: "エージェントを構築してデプロイする"
 description: "Canvas で Backer Concierge のひな形を作成し、ローカルで検証してから、Foundry にデプロイして再テストします。"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-29
 prev:
   link: /ja-jp/learning-hub/copilot-workshops/app/8-foundry-canvas/1-project-and-model/
   label: プロジェクトとモデルを準備する
@@ -157,4 +157,4 @@ Backer Concierge のひな形を作成し、カタログのグラウンディン
 
 [previous-module]: /ja-jp/learning-hub/copilot-workshops/app/8-foundry-canvas/1-project-and-model/
 [next-module]: /ja-jp/learning-hub/copilot-workshops/app/8-foundry-canvas/3-connect-to-site/
-[cleanup]: /ja-jp/learning-hub/copilot-workshops/app/8-foundry-canvas/#%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%92%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%A2%E3%83%83%E3%83%97%E3%81%99%E3%82%8B
+[cleanup]: /ja-jp/learning-hub/copilot-workshops/app/8-foundry-canvas/#リソースをクリーンアップする

@@ -3,7 +3,7 @@ title: "第 1 课 - 创建 Space Quiz 工作区"
 description: "在空文件夹中为 Space Quiz 启动本地 Interactive 会话。"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-29
 ---
 
 为 Space Quiz 创建本地工作区，并配置会话，在智能体开始工作时保持对流程的控制。
@@ -30,5 +30,5 @@ lastUpdated: 2026-10-05
 
 空的 Space Quiz 工作区已准备就绪。继续学习[第 2 课：构建与优化测验][next-lesson]。
 
-[model-order]: /zh-cn/learning-hub/copilot-workshops/first-steps/copilot-app/0-prerequisites/#%E9%80%89%E6%8B%A9%E6%A8%A1%E5%9E%8B
+[model-order]: /zh-cn/learning-hub/copilot-workshops/first-steps/copilot-app/0-prerequisites/#选择模型
 [next-lesson]: /zh-cn/learning-hub/copilot-workshops/first-steps/copilot-app/2-build-and-polish/

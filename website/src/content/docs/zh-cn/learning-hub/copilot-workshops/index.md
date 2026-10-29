@@ -2,7 +2,7 @@
 title: "GitHub Copilot 研讨会"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-29
 tags:
   - workshop
 ---
@@ -41,4 +41,4 @@ tags:
 [first-steps-app]: /zh-cn/learning-hub/copilot-workshops/first-steps/copilot-app/
 [first-steps-cli]: /zh-cn/learning-hub/copilot-workshops/first-steps/copilot-cli/
 [first-steps-vscode]: /zh-cn/learning-hub/copilot-workshops/first-steps/vscode/
-[real-world-development]: /zh-cn/learning-hub/copilot-workshops/real-world-development/
+[real-world-development]: https://github.com/github-samples/copilot-workshops/tree/main/docs/real-world-development

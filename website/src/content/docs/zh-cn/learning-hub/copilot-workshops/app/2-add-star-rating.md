@@ -3,7 +3,7 @@ title: "第 2 课 - 添加星级评分：快速上手"
 description: "在 GitHub Copilot app 中启动第一个智能体会话，对游戏卡片进行一项小改动，并通过第一个拉取请求合并更改。"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-29
 ---
 
 在上一课中，你浏览了工作区并使用了快速聊天。现在可以启动**智能体会话**，对项目进行第一次更改。此次改动很小：游戏数据中已有星级评分，但主页上的游戏卡片尚未显示。你将要求智能体显示评分、审查更改，并通过第一个拉取请求合并更改。
@@ -120,7 +120,7 @@ Copilot app 首先创建新的工作树，即项目的隔离副本。随后，�
 - [关于 GitHub Copilot app][about-copilot-app]
 - [使用 GitHub Copilot app 管理议题和拉取请求][managing-issues-prs]
 
-[prior-lesson]: /zh-cn/learning-hub/copilot-workshops/app/1-install-copilot-app/#%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AE-github-copilot-app
+[prior-lesson]: /zh-cn/learning-hub/copilot-workshops/app/1-install-copilot-app/#安装并配置-github-copilot-app
 [next-lesson]: /zh-cn/learning-hub/copilot-workshops/app/3-agent-modes/
 [agent-sessions]: https://docs.github.com/copilot/how-tos/github-copilot-app/agent-sessions
 [about-copilot-app]: https://docs.github.com/copilot/concepts/agents/github-copilot-app

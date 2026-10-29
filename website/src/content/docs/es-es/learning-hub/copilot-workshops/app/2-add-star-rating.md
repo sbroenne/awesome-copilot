@@ -3,7 +3,7 @@ title: "Lección 2 - Añadir valoraciones por estrellas: una mejora rápida"
 description: "Inicia tu primera sesión de agente en la aplicación GitHub Copilot, realiza un pequeño cambio en las tarjetas de los juegos y combínalo como tu primera solicitud de incorporación de cambios."
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-29
 ---
 
 En la lección anterior recorriste el espacio de trabajo y utilizaste un chat rápido. Ahora es el momento de iniciar una **sesión de agente** y realizar el primer cambio en el proyecto. Será un cambio pequeño: los juegos ya tienen una valoración por estrellas en sus datos, pero las tarjetas de la página de inicio todavía no la muestran. Pedirás al agente que la muestre, revisarás el cambio y lo combinarás como tu primera solicitud de incorporación de cambios.
@@ -118,7 +118,7 @@ A continuación, [partirás de la incidencia de filtrado y utilizarás los modos
 - [Acerca de la aplicación GitHub Copilot][about-copilot-app]
 - [Gestionar incidencias y solicitudes de incorporación de cambios con la aplicación GitHub Copilot][managing-issues-prs]
 
-[prior-lesson]: /es-es/learning-hub/copilot-workshops/app/1-install-copilot-app/#instalar-y-configurar-la-aplicaci%C3%B3n-github-copilot
+[prior-lesson]: /es-es/learning-hub/copilot-workshops/app/1-install-copilot-app/#instalar-y-configurar-la-aplicación-github-copilot
 [next-lesson]: /es-es/learning-hub/copilot-workshops/app/3-agent-modes/
 [agent-sessions]: https://docs.github.com/copilot/how-tos/github-copilot-app/agent-sessions
 [about-copilot-app]: https://docs.github.com/copilot/concepts/agents/github-copilot-app

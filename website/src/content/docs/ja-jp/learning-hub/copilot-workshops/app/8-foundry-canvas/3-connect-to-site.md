@@ -3,7 +3,7 @@ title: "エージェントをサイトに接続する"
 description: "資格情報を保護するローカルプロキシを介してホステッド エージェントの Backer Concierge を統合し、ウィジェットをエンドツーエンドでテストします。"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-29
 prev:
   link: /ja-jp/learning-hub/copilot-workshops/app/8-foundry-canvas/2-build-and-deploy/
   label: エージェントを構築してデプロイする
@@ -85,6 +85,6 @@ Azure の資格情報にアクセスできるコードは、プロキシだけ�
 
 [previous-module]: /ja-jp/learning-hub/copilot-workshops/app/8-foundry-canvas/2-build-and-deploy/
 [project-module]: /ja-jp/learning-hub/copilot-workshops/app/8-foundry-canvas/1-project-and-model/
-[agent-checks]: /ja-jp/learning-hub/copilot-workshops/app/8-foundry-canvas/2-build-and-deploy/#%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E3%82%92%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%A7%E6%A4%9C%E8%A8%BC%E3%81%99%E3%82%8B
-[cleanup]: /ja-jp/learning-hub/copilot-workshops/app/8-foundry-canvas/#%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%92%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%A2%E3%83%83%E3%83%97%E3%81%99%E3%82%8B
+[agent-checks]: /ja-jp/learning-hub/copilot-workshops/app/8-foundry-canvas/2-build-and-deploy/#エージェントをローカルで検証する
+[cleanup]: /ja-jp/learning-hub/copilot-workshops/app/8-foundry-canvas/#リソースをクリーンアップする
 [core-review]: /ja-jp/learning-hub/copilot-workshops/app/10-review/

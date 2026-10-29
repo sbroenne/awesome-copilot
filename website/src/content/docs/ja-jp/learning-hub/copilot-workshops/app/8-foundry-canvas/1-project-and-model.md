@@ -3,7 +3,7 @@ title: "プロジェクトとモデルを準備する"
 description: "Tailspin のカタログをエクスポートし、Foundry プロジェクトとモデルデプロイを作成して、Canvas で検証します。"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-29
 prev:
   link: /ja-jp/learning-hub/copilot-workshops/app/8-foundry-canvas/
   label: "オプション: Foundry を組み込む"
@@ -148,4 +148,4 @@ Azure ツールを準備し、カタログをエクスポートして、デプ�
 [install-azure-cli]: https://learn.microsoft.com/cli/azure/install-azure-cli
 [install-azd]: https://learn.microsoft.com/azure/developer/azure-developer-cli/install-azd
 [next-module]: /ja-jp/learning-hub/copilot-workshops/app/8-foundry-canvas/2-build-and-deploy/
-[cleanup]: /ja-jp/learning-hub/copilot-workshops/app/8-foundry-canvas/#%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%92%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%A2%E3%83%83%E3%83%97%E3%81%99%E3%82%8B
+[cleanup]: /ja-jp/learning-hub/copilot-workshops/app/8-foundry-canvas/#リソースをクリーンアップする

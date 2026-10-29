@@ -3,7 +3,7 @@ title: "准备项目和模型"
 description: "导出 Tailspin 目录，创建 Foundry 项目和模型部署，并在 Canvas 中验证。"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-29
 prev:
   link: /zh-cn/learning-hub/copilot-workshops/app/8-foundry-canvas/
   label: "可选：集成 Foundry"
@@ -148,4 +148,4 @@ Tailspin Toys 的支持者可以按类别和发行商筛选游戏，但*哪些�
 [install-azure-cli]: https://learn.microsoft.com/cli/azure/install-azure-cli
 [install-azd]: https://learn.microsoft.com/azure/developer/azure-developer-cli/install-azd
 [next-module]: /zh-cn/learning-hub/copilot-workshops/app/8-foundry-canvas/2-build-and-deploy/
-[cleanup]: /zh-cn/learning-hub/copilot-workshops/app/8-foundry-canvas/#%E6%B8%85%E7%90%86%E8%B5%84%E6%BA%90
+[cleanup]: /zh-cn/learning-hub/copilot-workshops/app/8-foundry-canvas/#清理资源

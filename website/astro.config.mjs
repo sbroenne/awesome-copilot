@@ -66,6 +66,15 @@ const workshopRedirects = Object.fromEntries(
   }),
 );
 
+// Copilot app First steps review moved from lesson 12 to 13 when Pages deployment was added.
+// ko-kr still serves its own lesson 12 until its translation is synced.
+const firstStepsReviewRedirects = Object.fromEntries(
+  ["", "es-es", "ja-jp", "pt-br", "zh-cn"].map((locale) => {
+    const prefix = `/${locale ? `${locale}/` : ""}learning-hub/copilot-workshops/first-steps/copilot-app/`;
+    return [`${prefix}12-review/`, `${prefix}13-review/`];
+  }),
+);
+
 // https://astro.build/config
 export default defineConfig({
   site,
@@ -119,6 +128,7 @@ export default defineConfig({
   integrations: [react(), sitemap(), pagefindResources()],
   redirects: {
     ...workshopRedirects,
+    ...firstStepsReviewRedirects,
     "/samples/": "/learning-hub/cookbook/",
     "/hooks/": "https://github.com/github/awesome-copilot/tree/main/hooks",
     "/workflows/": "https://github.com/github/awesome-copilot/tree/main/workflows",

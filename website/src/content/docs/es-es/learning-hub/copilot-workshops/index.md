@@ -2,7 +2,7 @@
 title: "Talleres de GitHub Copilot"
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-10-05
+lastUpdated: 2026-10-29
 tags:
   - workshop
 ---
@@ -41,4 +41,4 @@ Elige entre GitHub Copilot CLI, la aplicación GitHub Copilot, el agente de GitH
 [first-steps-app]: /es-es/learning-hub/copilot-workshops/first-steps/copilot-app/
 [first-steps-cli]: /es-es/learning-hub/copilot-workshops/first-steps/copilot-cli/
 [first-steps-vscode]: /es-es/learning-hub/copilot-workshops/first-steps/vscode/
-[real-world-development]: /es-es/learning-hub/copilot-workshops/real-world-development/
+[real-world-development]: https://github.com/github-samples/copilot-workshops/tree/main/docs/real-world-development
