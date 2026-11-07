@@ -477,7 +477,9 @@ The `/settings` command opens an interactive dialog to browse and edit all user 
 /settings
 ```
 
-The settings dialog supports search — type to filter settings by name. Changes take effect immediately.
+The settings dialog is a unified dashboard with global search across settings and local resources — type to filter by name. Changes take effect immediately.
+
+Use `/code` to open the current session's working directory in VS Code. When you launch LSP or local MCP server configs, the `COPILOT_SESSION_CWD` environment variable is available for launching and expanding those configs relative to the session directory. The **Sandbox extensions** setting runs extension processes inside the sandbox.
 
 The `/settings` command and the `/model` command both support **`--repo` and `--local` flags** for explicitly scoping which layer of settings you want to view or edit:
 
