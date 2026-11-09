@@ -477,7 +477,9 @@ The `/settings` command opens an interactive dialog to browse and edit all user 
 /settings
 ```
 
-The settings dialog supports search — type to filter settings by name. Changes take effect immediately.
+The settings dialog is a unified dashboard with global search across settings and local resources — type to filter by name. Changes take effect immediately.
+
+Use `/code` to open the current session in VS Code. Run `copilot help config` for the full list of settings the CLI offers.
 
 The `/settings` command and the `/model` command both support **`--repo` and `--local` flags** for explicitly scoping which layer of settings you want to view or edit:
 
@@ -927,6 +929,10 @@ Run `/config` to open a dedicated sidebar configuration screen inside the CLI, g
 ### Sandbox Network Allow/Deny Rules
 
 `/sandbox` supports per-host network allow/deny rules that layer on top of your configured upstream proxy, instead of replacing it. This lets you permit or block specific hosts for sandboxed commands without reconfiguring your whole proxy setup — useful when a sandboxed build or test needs to reach one extra domain (like a package registry mirror) while keeping the rest of your network policy intact.
+
+### Sandboxing Extensions and Local MCP Servers
+
+A **Sandbox extensions** setting runs extension processes inside the sandbox. Sandboxed local MCP servers honor relative filesystem permissions from the session directory. Set `COPILOT_SESSION_CWD` to control the working directory used when launching and expanding LSP and local MCP server configs.
 
 ### Memory and Session Import
 

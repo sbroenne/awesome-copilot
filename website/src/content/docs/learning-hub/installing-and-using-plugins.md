@@ -140,6 +140,8 @@ Or from a local path:
 copilot plugin marketplace add /path/to/local-marketplace
 ```
 
+To unregister a marketplace, run `copilot plugin marketplace remove <name>`. Removal is refused while one of that marketplace's plugins is enabled; add `--force` to also clear the plugin.
+
 ### Sharing Marketplace Registrations Across a Team
 
 To automatically register an additional marketplace for everyone working in a repository, add an `extraKnownMarketplaces` entry to your `.github/copilot-settings.json` (or `config.json`):
