@@ -311,6 +311,8 @@ For example, a PostgreSQL server that can't connect because `DATABASE_URL` is no
 /mcp show postgres     # inspect a specific server
 ```
 
+**Inspecting and removing servers**: Use `/mcp get <name>` to inspect one server and `/mcp remove <name>` to delete it (these replaced the retired `info` and `delete` verbs; `copilot mcp get` works from the shell too). In untrusted folders, workspace MCP configuration is skipped, and the CLI warns you which folder to trust to load it. Set `COPILOT_MCP_TOOL_CACHE` to turn off the MCP tool snapshot cache for every server.
+
 **Viewing attached servers with `/mcp list`**: Use `/mcp list` to see which MCP servers are currently attached to your session and their status. Unlike `/mcp show` (which shows all configured servers), `/mcp list` focuses on what's active right now and can run **while the agent is working** — useful for checking server status mid-turn without interrupting the agent:
 
 ```

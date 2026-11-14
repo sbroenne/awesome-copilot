@@ -725,6 +725,8 @@ The `/compact` command summarizes the conversation history to free up context wi
 /compact
 ```
 
+By default the CLI uses each model's recommended context window; an explicit context choice you make is preserved. If a compaction fails, the model provider's error message is shown as-is.
+
 > **Note**: Skills remain loaded and effective after `/compact`. You do not need to re-invoke them after compacting.
 
 > **ACP sessions**: The `/compact`, `/context`, `/usage`, and `/env` commands are available in ACP (Agent Coordination Protocol) sessions, allowing remote ACP clients to surface session details and manage context from within their own automated workflows.
@@ -950,6 +952,7 @@ This section collects settings and behaviors that **changed or were renamed** in
 - **Auto allow-all mode requires experimental mode.** The previous `AUTO_APPROVAL` environment variable approach was removed in favor of `/experimental on` (or `--experimental`) plus `/allow-all auto`.
 - **Ctrl+D no longer queues messages.** It now uses its default terminal behavior; use **Ctrl+Q** or **Ctrl+Enter** to queue a message instead.
 - **The CLI's command-line parser was rewritten** (moving off Commander to a Rust-based grammar). As a result, some error and help wording changed, `copilot login --host` now works correctly, and `--max-autopilot-continues` no longer accepts scientific notation as a value.
+- **`/mcp info`/`/mcp delete` and `/skills info` were retired.** Use `/mcp get`, `/mcp remove`, and `/skills get` instead.
 - **Model availability changes over time.** The model picker periodically retires older models; if a model you previously pinned in a custom agent or config disappears from `/model`, switch to a current model or a [family alias](#model-picker) instead.
 
 ## Common Questions
