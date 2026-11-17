@@ -173,6 +173,10 @@ Use one subagent to gather facts and another to implement with those facts. This
 
 The built-in **`/research`** command uses this orchestrator/subagent model automatically (v1.0.40+): it spawns an orchestrator that breaks the topic into research threads, runs them in parallel as subagents, and synthesizes the findings into a structured report. This means you get deeper and more reliable results than a single-turn query provides — without having to set up the multi-agent pattern yourself.
 
+### Dynamic workflows (experimental)
+
+With experimental features enabled (`/experimental`), Copilot CLI can run **dynamic workflows**: reusable orchestrations that coordinate multiple subagents through defined phases. Use `/workflows` in a session to inspect runs, including each agent's current activity, or `copilot workflow run` to start one from the terminal. Workflows can run with a Copilot sign-in, usage-based billing, a custom model provider (BYOK), or a Microsoft 365 account. A workflow's own agent cannot start or resume other workflow runs, which prevents runaway self-spawning. Because workflows can spawn many agents and consume substantial credits, review a run's limits before approving it.
+
 ## Repository examples you can inspect
 
 This repository already includes a few useful examples of delegation-related syntax:
