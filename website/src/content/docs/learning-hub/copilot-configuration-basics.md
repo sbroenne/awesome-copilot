@@ -835,6 +835,10 @@ These flags apply only to the current invocation — your persisted sandbox pref
 
 **`worktreeBaseRef` setting**: Controls whether `/worktree`, `/worktree new`, and the `--worktree` startup flag create the new worktree from `HEAD` or from the remote default branch. All three default to `HEAD`. Set this in `/settings` if you want worktrees to branch from the remote default instead.
 
+**Sandbox user policy**: `/sandbox policy` shows the GitHub account that sandboxed `gh` commands use. Windows sandboxes allow package queries by default; set `sandbox.userPolicy.capabilities` to `[]` to opt out. On macOS, `sandbox.userPolicy.seatbelt.extraMachLookups` allows specific Mach service lookups in sandboxed commands without enabling Keychain access.
+
+**Timeline timestamps**: Turn on the `showTimelineTimestamps` setting to show start times, end times, and elapsed durations on timeline items.
+
 **Sandbox network isolation**: On macOS and Linux, sandboxed commands cannot reach services running on your own machine, including a server the sandboxed command itself starts on `127.0.0.1`. This means test suites that bind a local port will fail inside the sandbox. Turn on **Allow local network** in `/sandbox` to restore access to localhost. On Linux, sandboxing also requires `slirp4netns`, `nsenter`, `iptables`, `ip6tables`, `iptables-restore`, and `ip6tables-restore` on `PATH` — install these if sandboxed commands start failing to launch. Additionally, Linux sandboxes restrict network egress to the configured HTTP(S) proxy when one is set; this proxy mode requires `slirp4netns`, `util-linux` 2.35+, `iptables`, and `/dev/net/tun` access.
 
 The `--attachment` flag (available in prompt mode, `-p`) lets you attach files — images or native documents — to the initial prompt in non-interactive mode:
