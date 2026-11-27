@@ -147,6 +147,20 @@ Prevent Copilot from accessing specific files or directories.
 
 **Why it matters**: Exclude sensitive files, generated code, or dependencies from Copilot's context to improve suggestion relevance and protect confidential information.
 
+### Setting Environment Variables for Copilot CLI
+
+Use the `env` setting in the Copilot CLI settings file to set environment variables for every process Copilot starts, including shell commands, local LSP and MCP servers, hooks, and extensions. It works with or without the sandbox.
+
+```json
+{
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
+```
+
+**Why it matters**: One place to configure proxies, feature flags, or tool paths consistently across everything the CLI launches. Don't store secrets in a committed settings file.
+
 ## Repository-Level Configuration
 
 The `.github/` directory in your repository enables team-wide customizations that are version-controlled and shared across all contributors.
